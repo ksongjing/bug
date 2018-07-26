@@ -1,0 +1,135 @@
+@import "../../../Theme";
+.roadmap{
+  padding-bottom: 0.4rem;
+  .roadmap-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .roadmap-items{
+      margin: 5px auto;
+      height: auto;
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .roadmap-item{
+      width: 100%;
+      height: 1.5rem;
+      position: relative;
+      &:last-child{
+        height: auto;
+      }
+      .item-point{
+        width: 0.2rem;
+        height: 0.2rem;
+        border-radius: 50%;
+        border: 1px solid $color-main;
+        background: $color-main;
+
+        position: absolute;
+        left: 0;
+      }
+      .item-line{
+        width: 2px;
+        height: 1.5rem;;
+        background: $color-main;
+
+        position: absolute;
+        left: 0.1rem;
+      }
+      .item-content{
+        width: auto;
+        color: $color-dark;
+      }
+      .item-date{
+        width: 100%;
+        font-size: 0.34rem;
+        font-weight: bold;
+        color: $color-dark;
+      }
+      .item-desc{
+        width: 100%;
+        font-size: 14px;
+        color: #666666;
+        line-height: 1.5;
+      }
+    }
+    .item-content-right{
+      text-align: left;
+      margin-left: 0.6rem;
+    }
+    .item-content-left{
+      text-align: left;
+      margin-left: 0.6rem;
+    }
+  }
+}
+
+@media (min-width: $min-width) {
+  .roadmap{
+    padding-bottom: 54px;
+    .roadmap-container{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .roadmap-items{
+        margin: 5px auto;
+        height: auto;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .roadmap-item{
+        width: 914px;
+        height: 80px;
+        position: relative;
+        .item-point{
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          border: 1px solid $color-main;
+          background: $color-main;
+
+          position: absolute;
+          left: 450px;
+        }
+        .item-line{
+          width: 2px;
+          height: 80px;
+          background: $color-main;
+
+          position: absolute;
+          left: 456px;
+        }
+        .item-content{
+          width: 450px;
+          color: $color-dark;
+        }
+        .item-date{
+          width: 400px;
+          font-size: 20px;
+          font-weight: bold;
+          color: $color-dark;
+        }
+        .item-desc{
+          width: 400px;
+          font-size: 14px;
+          color: #666666;
+          line-height: 20px;
+        }
+      }
+      .item-content-right{
+        text-align: left;
+        margin-left: 514px;
+      }
+      .item-content-left{
+        text-align: right;
+        margin-left: 0;
+      }
+    }
+  }
+}

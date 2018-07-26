@@ -1,0 +1,78 @@
+@import "Theme";
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+  background: #F4F4F4;
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+  .container-top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    a{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .more {
+      width: 64px;
+      height: 20px;
+      align-self: center;
+      cursor: pointer;
+      background: url("./assets/images/btn-more.png");
+      &:hover{
+        background-position: 0 -20px;
+      }
+    }
+  }
+}
+.fade-appear {
+  opacity: 0.01;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+h2 , h3{
+  color: $color-dark;
+  font-weight: bold;
+}
+h2{
+  font-size: 18px;
+  margin: 24px 0;
+}
+h3{
+  font-size: 14px;
+}
+
+@media (min-width:912px) and (max-width: 1216px) {
+  .container{
+    width: 912px;
+  }
+}
+@media (min-width:608px) and (max-width: 911px) {
+  .container{
+    width: 608px;
+  }
+}
+@media (max-width: 640px) {
+  h2{
+    font-size: 0.30rem;
+    margin: 0.28rem 0;
+  }
+  h3{
+    font-size: 0.24rem;
+  }
+  .container{
+    width: 94%;
+  }
+}

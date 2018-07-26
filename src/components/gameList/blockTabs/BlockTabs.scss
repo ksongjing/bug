@@ -1,0 +1,61 @@
+@import "../../../Theme";
+.blocktab{
+  .blocktab-container{
+    margin-top: 0.4rem;
+  }
+  .blocktab-items{
+    display: flex;
+    flex-direction: row;
+    height: 0.6rem;
+    .blacktab-item{
+      height: 100%;
+      font-size: 0.24rem;
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: $color-dark;
+      justify-content: center;
+      cursor: pointer;
+      border: 1px solid $color-border-gray;
+      border-right-width: 0;
+      &:last-child{
+        border-right-width: 1px;
+      }
+      &:hover{
+        // 添加变暗效果
+      }
+    }
+    .blacktab-item-selected{
+      color: $color-main-dark;
+      border-bottom: 2px solid $color-main;
+    }
+  }
+}
+
+@media (min-width: $min-width) {
+  .blocktab {
+    .blocktab-container {
+      margin-top: 30px;
+    }
+    .blocktab-items {
+      height: 50px;
+      .blacktab-item {
+        font-size: 14px;
+        flex: 1;
+
+        border: 1px solid $color-border-gray;
+        border-right-width: 0;
+        &:last-child {
+          border-right-width: 1px;
+        }
+        &:hover {
+          // 添加变暗效果
+        }
+      }
+      .blacktab-item-selected {
+        border-bottom: 2px solid $color-main;
+      }
+    }
+  }
+}

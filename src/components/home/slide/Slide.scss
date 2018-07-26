@@ -1,0 +1,33 @@
+@import "../../../Theme";
+.slide{
+  .swiper-wrapper{
+    min-height: 4rem;
+    background: $color-light-gray;
+    .custom-slide-content{
+      height: 4rem;
+      .custom-swiper-img {
+        height: 4rem;
+        width: 100%;
+        background-position: center;
+      }
+    }
+  }
+}
+
+@media (min-width: $min-width) {
+  .slide{
+    .swiper-wrapper{
+      min-height: 495px;
+      background: $color-light-gray;
+      .custom-slide-content{
+        height: 495px;
+        .custom-swiper-img {
+          height: 495px;
+          width: 100%;
+          background-position: center;
+        }
+      }
+    }
+  }
+}
+

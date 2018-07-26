@@ -1,0 +1,54 @@
+@import "../../../Theme";
+.exchange{
+  min-height: 144px;
+  background: $color-light-dark;
+  .exchange-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 0.4rem;
+    h2{
+      color: white;
+    }
+    .exchange-items{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      a {
+        height: 0.7rem;
+        margin-bottom: 0.2rem;
+        display: flex;
+      }
+      img {
+        height: 0.7rem;
+        margin-right: 0.3rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $min-width) {
+  .exchange{
+    min-height: 144px;
+    background: $color-light-dark;
+    .exchange-container{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-bottom: 24px;
+      h2{
+        color: white;
+      }
+      .exchange-items{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        img {
+          height: 42px;
+          margin-right: 36px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

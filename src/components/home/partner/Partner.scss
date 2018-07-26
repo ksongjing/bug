@@ -1,0 +1,44 @@
+@import "../../../Theme";
+.partner{
+  .partner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 0.4rem;
+    .partner-items{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      a {
+        display: flex;
+        height: 0.7rem;
+        margin: 0.1rem 0.2rem 0.1rem 0;
+      }
+      img {
+        height: 0.7rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $min-width) {
+  .partner{
+    min-height: 144px;
+    .partner-container{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-bottom: 24px;
+      .partner-items{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        img {
+          height: 46px;
+          margin-right: 36px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

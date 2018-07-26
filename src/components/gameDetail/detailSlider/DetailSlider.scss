@@ -1,0 +1,115 @@
+@import "../../../Theme";
+$swiperHeight: 3rem;
+
+.detail-slider {
+  .swiper-container {
+    height: $swiperHeight;
+    margin-bottom: 0.4rem;    // 距离游戏介绍
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 0.24rem;
+      background: #fff;
+      width: auto;
+      max-width: 80%;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    .cursor {
+      cursor: pointer;
+    }
+
+    // 修改上一页下一页样式
+    .swiper-button-prev {
+      background: url("../../../assets/images/roll-left.png") 0 0 no-repeat;
+      background-size: 0.6rem 100%;;
+      width: 0.6rem;
+      height: 100%;;
+      top: 0;
+      margin-top: 0;
+      left: 0;
+    }
+
+    // 修改上一页下一页样式
+    .swiper-button-next {
+      background: url("../../../assets/images/roll-right.png") 0 0 no-repeat;
+      background-size: 0.6rem 100%;;
+      width: 0.6rem;
+      height: 100%;;
+      top: 0;
+      margin-top: 0;
+      right: 0;
+    }
+  }
+}
+
+@media (min-width: $min-width) {
+  $swiperHeight: 310px;
+
+  .detail-slider {
+    .swiper-container {
+      width: 790px;
+      height: $swiperHeight;
+      margin-bottom: 25px;
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        width: auto;
+        max-width: 80%;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .cursor {
+        cursor: pointer;
+      }
+
+      // 修改上一页下一页样式
+      .swiper-button-prev {
+        background-size: 45px  100%;
+        width: 45px;
+        height: 100%;
+      }
+
+      // 修改上一页下一页样式
+      .swiper-button-next {
+        background-size: 45px 100%;
+        width: 45px;
+        height: 100%;
+      }
+    }
+  }
+
+}

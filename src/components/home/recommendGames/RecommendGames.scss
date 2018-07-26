@@ -1,0 +1,145 @@
+@import "../../../Theme";
+.recomgames{
+  .recomgames-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .recomgames-items{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .items-left{
+        width: 100%;
+        height: 3.3rem;
+        margin-right: 0;
+        margin-bottom: 15px;
+        display: flex;
+        .gamebox {
+          width: 100%;
+          height: 100%;
+          margin-right: 0;
+          margin-bottom: 15px;
+          background: $color-light-gray;
+          .gamebox-top{
+            height: 100%;
+          }
+        }
+      }
+      .items-center{
+        display: flex;
+        flex-direction: row;
+        margin-right: 0;
+        .gamebox {
+          margin-right: 0;
+          margin-bottom: 15px;
+          width: 48%;
+          background: $color-light-gray;
+          &:first-child{
+            margin-right: 4%;
+          }
+        }
+      }
+      .items-right{
+        display: flex;
+        flex-direction: row;
+        .gamebox {
+          margin-right: 0;
+          margin-bottom: 15px;
+          background: $color-light-gray;
+          &:first-child {
+            margin-right: 4%;
+          }
+          &:last-child{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $min-width) {
+  .recomgames{
+    .recomgames-container{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .recomgames-items{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .items-left{
+          width: 590.5px;
+          height: 335px;
+          margin-right: 15px;
+          display: flex;
+          .gamebox {
+            width: 100%;
+            height: 100%;
+            margin-right: 0;
+            margin-bottom: 15px;
+            background: $color-light-gray;
+            .gamebox-top{
+              height: 100%;
+            }
+          }
+        }
+        .items-center{
+          display: flex;
+          flex-direction: column;
+          margin-right: 15px;
+          .gamebox {
+            margin-right: 0;
+            margin-bottom: 15px;
+            background: $color-light-gray;
+            width: 286.75px;
+          }
+        }
+        .items-right{
+          display: flex;
+          flex-direction: column;
+          .gamebox {
+            margin-right: 0;
+            margin-bottom: 15px;
+            background: $color-light-gray;
+            &:last-child{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1216px) {
+  .items-right,
+  .items-center {
+    width: 286.75px;
+  }
+}
+@media (min-width:912px) and (max-width: 1200px) {
+  .items-right{
+    width: 100%;
+    flex-direction: row !important;
+    .gamebox{
+      margin-right: 15px !important;
+      &:last-child{
+        display: flex !important;
+      }
+    }
+  }
+}
+@media (min-width:608px) and (max-width: 911px) {
+  .items-left {
+    margin-bottom: 15px;
+  }
+  .items-right,
+  .items-center{
+    width: 100%;
+    flex-direction: row !important;
+    .gamebox{
+      margin-right: 15px !important;
+    }
+  }
+}

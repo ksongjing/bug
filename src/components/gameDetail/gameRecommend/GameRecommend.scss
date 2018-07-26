@@ -1,0 +1,152 @@
+@import "../../../Theme";
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.gamerecommend{
+  width: 100%;
+  margin-top: 0.4rem;
+
+  .gamerecommend-container{
+    display: flex;
+  }
+
+  .gamerecommend-items{
+    width: 100%;
+
+    .gamerecommend-item{
+      width: 100%;
+      height: 1.5rem;
+      border: solid 1px #e5e5e5;
+      border-radius: 2px;
+      background: white;
+
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0.1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .game-item-icon{
+        overflow: hidden;
+        font-size: 0.22rem;
+        width: 2.5rem;
+
+        img{
+          width: 2.5rem;
+          height: 1.5rem;
+        }
+      }
+
+      .game-item-descpt{
+        //width: 2.5rem;
+        flex: 1;
+        margin: 0.1rem 0px 0.1rem 0.2rem;
+
+        font-size: 0.28rem;
+        color: $color-dark;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+
+        .game-item-title{
+          width: 100%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow:ellipsis; // one line ...
+        }
+
+        .game-item-text{
+          width: 100%;
+          margin-top: 0.08rem;
+          font-size: 0.24rem;
+          color: $color-gray;
+
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;  // max 2  line ...
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: $min-width) {
+  /*组件*/
+  .gamerecommend{
+    width: auto;
+    margin-top: 0;
+
+    .gamerecommend-container{
+      width: 360px;
+    }
+
+    .gamerecommend-items{
+      width: 100%;
+
+      .gamerecommend-item{
+        width: 100%;
+        height: 84px;
+
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+
+        .game-item-icon{
+          overflow: hidden;
+          font-size: 14px;
+          width: 150px;
+
+          img{
+            width: 150px;
+            height: 84px;
+          }
+        }
+
+        .game-item-descpt{
+          //width: 2.5rem;
+          flex: 1;
+          margin: 5px 0px 5px 16px;
+
+          font-size: 16px;
+          color: $color-dark;
+
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+
+          .game-item-title{
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow:ellipsis; // one line ...
+          }
+
+          .game-item-text{
+            width: 100%;
+            margin-top: 5px;
+            font-size: 14px;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;  // max 2  line ...
+            -webkit-box-orient: vertical;
+          }
+        }
+      }
+    }
+  }
+}

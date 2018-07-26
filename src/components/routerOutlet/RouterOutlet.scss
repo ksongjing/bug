@@ -1,0 +1,12 @@
+@import "../../Theme";
+.RouterOutlet{
+  margin-top: 0.85rem;
+  min-height: 100vh;
+}
+
+@media (min-width: $min-width) {
+  .RouterOutlet{
+    margin-top: 70px;
+    min-height: 100vh;
+  }
+}

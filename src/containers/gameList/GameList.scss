@@ -1,0 +1,26 @@
+@import '../../Theme';
+.gamelist{
+  .gamelist-loadmore{
+    width: 1.6rem;
+    height: 0.5rem;
+    color: white;
+    background: $color-main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem auto auto;
+    cursor: pointer;
+    font-size: 0.24rem;
+  }
+}
+
+@media (min-width: $min-width) {
+  .gamelist{
+    .gamelist-loadmore{
+      width: 130px;
+      height: 36px;
+      margin: 25px auto auto;
+      font-size: 14px;
+    }
+  }
+}

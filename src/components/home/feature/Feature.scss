@@ -1,0 +1,69 @@
+@import "../../../Theme";
+
+.feature{
+  background: $color-light-gray;
+  .feature-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 0.5rem;
+    .feature-items {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      .feature-item{
+        flex: 1;
+        margin-right: 0;
+        &:last-child{
+          margin-right: 0;
+        }
+        .item-title{
+          text-align: left;
+          padding-left: 10px;
+          border-left: 4px solid $color-main;
+        }
+        .item-desc{
+          text-align: left;
+          line-height: 1.5;
+          font-size: 0.24rem;
+          color: $color-gray;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $min-width) {
+  .feature{
+    background: $color-light-gray;
+    .feature-container{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-bottom: 54px;
+      .feature-items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .feature-item{
+          flex: 1;
+          margin-right: 60px;
+          &:last-child{
+            margin-right: 0;
+          }
+          .item-title{
+            text-align: left;
+            padding-left: 10px;
+            border-left: 4px solid $color-main;
+          }
+          .item-desc{
+            text-align: left;
+            line-height: 1.5;
+            font-size: 14px;
+            color: $color-gray;
+          }
+        }
+      }
+    }
+  }
+}

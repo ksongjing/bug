@@ -1,0 +1,13 @@
+.games{
+  .games-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .game-items{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}

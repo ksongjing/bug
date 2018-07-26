@@ -1,0 +1,13 @@
+.backtop{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: none;
+  background: url("../../assets/images/btn-go-top.png");
+  &:hover{
+    background-position: 0 -50px;
+  }
+}

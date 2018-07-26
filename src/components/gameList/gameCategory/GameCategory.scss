@@ -1,0 +1,57 @@
+@import "../../../Theme";
+.gamecatecory{
+  .gamecatecory-container{
+    margin-top: 0.4rem;
+  }
+  .gamecatecory-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 0.5rem;
+    .gamecatecory-item{
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: $color-main-dark;
+      justify-content: center;
+      cursor: pointer;
+      border: 1px solid $color-main;
+      border-radius: 0.3rem;
+      font-size: 0.24rem;
+      padding: 0 0.3rem;
+      margin-right: 0.2rem;
+      &:hover{
+        // 添加变暗效果
+      }
+    }
+    .gamecatecory-item-selected{
+      color: white;
+      background: $color-main;
+    }
+  }
+}
+
+@media (min-width: $min-width) {
+  .gamecatecory{
+    .gamecatecory-container{
+      margin-top: 25px;
+    }
+    .gamecatecory-items{
+
+      height: 28px;
+      .gamecatecory-item{
+        border-radius: 14px;
+        font-size: 14px;
+        padding: 0 20px;
+        margin-right: 15px;
+        &:hover{
+          // 添加变暗效果
+        }
+      }
+      .gamecatecory-item-selected{
+
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import "../../Theme";
+
+.gamedetail{
+
+  .gamedetail-cententView{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $min-width) {
+  .gamedetail{
+
+    .gamedetail-cententView{
+      width: auto;
+      margin-bottom: 50px;
+    }
+  }
+}

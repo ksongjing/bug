@@ -1,0 +1,52 @@
+.Footer {
+  width: 100%;
+  height: 145px;
+  background: #252525;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .Footer-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    div {
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+      background: gray;
+      border-radius: 50%;
+      margin: 0 11px;
+      &:hover {
+        background-position: 0px -45px;
+      }
+    }
+    .img-fcb {
+      background: url("../../assets/images/icon-social-facebook.png") no-repeat;
+    }
+    .img-git {
+      background: url("../../assets/images/icon-social-git.png") no-repeat;
+    }
+    .img-twi {
+      background: url("../../assets/images/icon-social-twitter.png") no-repeat;
+    }
+    .img-tel {
+      background: url("../../assets/images/icon-social-telegram.png") no-repeat;
+    }
+    .img-med {
+      background: url("../../assets/images/icon-social-medium.png") no-repeat;
+    }
+  }
+  .Footer-copyright {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .text {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+}

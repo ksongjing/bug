@@ -1,0 +1,96 @@
+@import "../../../Theme";
+.m-navbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+  position: relative;
+  .m-navbar-search{
+    width: 30px;
+    height: 30px;
+    background: url("../../../assets/images/icon-magnifier.png") no-repeat;
+  }
+  .m-navbar-btn-menu{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 6px;
+    .btn-menu-top,
+    .btn-menu-center,
+    .btn-menu-bottom{
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translateZ(0px) rotate(0deg);
+      -webkit-transform: translateZ(0px) rotate(0deg);
+      transition: transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99) 0s;
+      -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99) 0s;
+      .top-rect{
+        background: $color-dark;
+        height: 1px;
+        width: 25px;
+        transition: transform 0.2s ease 0.2s;
+        -webkit-transition: -webkit-transform 0.2s ease 0.2s;
+        transform: translate3d(0px, 5px, 0px);
+        -webkit-transform: translate3d(0px, 5px, 0px);
+      }
+      .center-rect{
+        background: $color-dark;
+        height: 1px;
+        width: 25px;
+        transition: transform 0.2s ease 0.2s;
+        -webkit-transition: -webkit-transform 0.2s ease 0.2s;
+        transform: translate3d(0px, 15px, 0px);
+        -webkit-transform: translate3d(0px, 15px, 0px);
+      }
+      .bottom-rect{
+        background: $color-dark;
+        height: 1px;
+        width: 25px;
+        transition: transform 0.2s ease 0.2s;
+        -webkit-transition: -webkit-transform 0.2s ease 0.2s;
+        transform: translate3d(0px, 25px, 0px);
+        -webkit-transform: translate3d(0px, 25px, 0px);
+      }
+    }
+
+  }
+}
+.slide-open{
+  .m-navbar {
+    .m-navbar-btn-menu{
+      .btn-menu-top{
+        transform: translateZ(0px) rotate(-45deg);
+        -webkit-transform: translateZ(0px) rotate(-45deg);
+        .top-rect{
+          transform: translate3d(0px, 12px, 0px);
+          -webkit-transform: translate3d(0px, 12px, 0px);
+        }
+      }
+      .btn-menu-center{
+        display: none;
+      }
+      .btn-menu-bottom{
+        transform: translateZ(0px) rotate(45deg);
+        -webkit-transform: translateZ(0px) rotate(45deg);
+        .bottom-rect{
+          transform: translate3d(0px, 14px, 0px);
+          -webkit-transform: translate3d(0px, 12px, 0px);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $min-width) {
+  .m-navbar{
+    display: none;
+  }
+}

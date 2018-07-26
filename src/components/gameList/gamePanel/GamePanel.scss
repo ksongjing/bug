@@ -1,0 +1,149 @@
+@import "../../../Theme";
+.gamepanel{
+  margin-top: 0.4rem;
+
+  .gamepanel-items{
+    .gamepanel-item{
+      display: flex;
+      flex-direction: row;
+      border: 0.02rem solid $color-border-gray;
+      padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+      margin: 0 auto;
+      margin-bottom:0.3rem;
+      position: relative;
+      background: white;
+
+      .item-icon{
+        overflow: hidden;
+        width: 40%;
+        background: $color-light-gray;
+        font-size: 14px;
+
+        img{
+          width: 2.5rem;
+          min-height: 1.9rem;
+        }
+      }
+
+      .item-content{
+        width: 60%;
+        margin-left: 0.2rem;
+        text-align: left;
+        .name{
+          width: 100%;
+          margin-top: 0.02rem;
+          font-size: 0.28rem;
+          color: $color-dark;
+
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow:ellipsis; // one line ...
+        }
+        .tags{
+          margin-top: 0.06rem;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          font-size: 0.22rem;
+          color: gray;
+
+          div{
+            margin-right: 0.1rem;
+
+            &:last-child{
+              margin-right: 0rem;
+            }
+          }
+        }
+        .desc{
+          margin-top: 0.12rem;
+          font-size: 0.22rem;
+          color: $color-dark;
+
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;  // max 2  line ...
+          -webkit-box-orient: vertical;
+        }
+      }
+      .item-todetail{
+        height: 0rem;
+        width: 0rem;
+        color: white;
+        background: $color-main;
+        position: absolute;
+        right: 0.0rem;
+        top: 0.0rem;
+        cursor: pointer;
+        font-size: 0.24rem;
+        display: none;
+        justify-content:center;
+        align-items: center;
+        &:hover{
+          -webkit-filter: brightness(1.1);
+          -o-filter: brightness(1.1);
+          -moz-filter: brightness(1.1);
+          filter: brightness(1.1);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $min-width) {
+  .gamepanel{
+    margin-top: 25px;
+    .gamepanel-items{
+      width: 1200px;
+      .gamepanel-item{
+        padding: 15px 15px 15px 15px;
+        margin-bottom: 15px;
+        position: relative;
+
+        .item-icon{
+          width: 289px;
+          img{
+            width: 289px;
+            min-height: 161px;
+          }
+        }
+
+        .item-content{
+          margin-left: 22px;
+          .name{
+            margin-top: 10px;
+            font-size: 24px;
+          }
+          .tags{
+            margin-top: 20px;
+            font-size: 14px;
+
+            div{
+              margin-right: 10px;
+
+              &:last-child{
+                margin-right: 0px;
+              }
+            }
+          }
+          .desc{
+            margin-top: 20px;
+            font-size: 14px;
+          }
+        }
+        .item-todetail{
+          height: 40px;
+          width: 126px;
+          right: 25px;
+          top:24px;
+          font-size: 14px;
+          display: flex;
+          &:hover{
+
+          }
+        }
+      }
+    }
+  }
+}
